@@ -1,6 +1,9 @@
 <?php
+
 $str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 $code="";
+
 $str_num = "0123456789";
 
 if(isset($_POST['count'])){
