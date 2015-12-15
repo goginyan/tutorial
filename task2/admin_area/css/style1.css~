@@ -1,0 +1,54 @@
+html { background:#282828;} 
+
+#wrapper{ width:1100px; padding:0 50px; margin:0 auto; min-height:500px; background:#fff;}
+
+#header{ background: url(../images/pencils.jpg) no-repeat left; width:1150px; height:193px;}
+
+#logo{ padding-top:50px;}
+
+#menu{ width:1100px; height:50px; background-color: #4F4949;}
+#menu ul{ float:left;list-style-type: none;}
+#menu ul li{ float:left; line-height:20px; padding:0 15px;}
+#menu ul li a{ width: 100px; text-decoration:none; color:#fff; font-family:Verdana, Geneva, sans-serif; font-size:14px; padding:5px;font-weight: bold;}
+/*#menu ul li a:hover{background-color: #8E1B1B;padding:5 20px}*/
+
+#menu li ul{display:none;}
+#menu li li{line-height:27px}
+#menu li li a{color: #fff;}
+
+
+#menu h1{color:#fff; font-family:Verdana, Geneva, sans-serif; font-size:14px; line-height:40px; float:left; margin-left:60px; font-weight: bold;}
+
+
+#contents{ width:1100px; min-height:300px;}
+
+#body{ width:812px; min-height: 450px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;}
+
+#latestproject{ padding-top:20px; margin-bottom: 30px}
+#latestproject h1{color:#cb0030; font-family:Verdana, Geneva, sans-serif; font-size:16px; line-height:40px;}
+
+.project{ float:left; width:450px; height:230px; margin:40px; margin-bottom: 120px;}
+.project img{ width:240px; height:130px;border: 1px solid #ccc;}
+.project p{width: 100px;height:5px; margin-left:2px; text-align:justify}
+.project a{ padding: 5px; width: 130px; background: #000; color: #fff;cursor: pointer;}
+.project a:hover{padding: 6px; width: 140px; background: #fff; color: #000;}
+.project h2{ margin-left:5px; font-family:Verdana, Geneva, sans-serif; font-size:15px; line-height:20px; float:left; text-decoration:underline; margin-bottom:30px;}
+
+#footer{ clear:both; width:1100px; height:333px; background:url(../../site/images/footer.png) no-repeat; margin-left:-50px; padding:50px; padding-top:100px}
+
+
+.clear{ clear:both; height:1px; width:1100px;}
+
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    
+ }
+input.qtyplus { width:25px; height:25px;   background: #000; color: #fff; }
+input.qtyminus { width:25px; height:25px;   background: #000; color: #fff;}
+
+.sub {padding: 5px; width: 130px; background: #000; color: #fff;cursor: pointer;}
+.sub:hover {padding: 6px; width: 140px; background: #fff; color: #000;}
+
+

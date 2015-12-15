@@ -1,0 +1,93 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tsk 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="../js/plmin.js"></script>
+     <link rel="stylesheet" href="css/style1.css">
+     <link rel="stylesheet" type="text/css" href="css/table.css" madia="all">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo"><img src="../site/images/log.jpg" width="285" height="115"></div>
+        </div>   
+            <div id="menu">
+                
+                <ul>
+                    <li><a href="../admin_area/index.php">Home Page</a></li>
+                    <li><a href="../admin_area/index.php?ctrl=User&act=All">Orders</a></li>
+                </ul>
+               
+                 
+            </div>
+
+<div class="clear"></div>
+  <form action="index.php?ctrl=Pro&act=Insert" method="post" enctype="multipart/form-data">
+<table class="gradienttable">
+	<tr>
+         
+    	<th><p>Name</p></th>
+        <th><p>Product(s)</p> </th>
+        <th><p>Quantity</p></th>
+        <th><p>Price</p></th>
+        <th><p>Subtotal</p></th>
+	</tr>
+ 	<tr>
+             
+
+		      <td><input type="hidden" name="title" value="<?php echo $items->name; ?>"><?php echo $items->name; ?></td>
+                       <input type="hidden" name="id" value="<?php echo $items->product_id; ?>">
+					   <input type="hidden" name="c_id" value="">
+                                           
+
+					   
+                
+              <td><img src ="img/<?php echo $items->image; ?>" width="60" heght="60" /> </td> 
+            
+        <td><input type="text" name="quantity" value="<?php echo @$_POST['quantity']; ?>"></td>
+        <td><?php echo $items->price; ?>.00$</td>
+        <td><?php echo @$_POST['quantity']*$items->price; ?>.00$</td>       
+	</tr>
+            
+     <tr>
+    	<td colspan="6"><input type="hidden" name="price" value="<?php echo $_POST['quantity']*$items->price; ?>">Total Price: <h1><?php echo $_POST['quantity']*$items->price; ?>.00$</h1><td>
+    </tr>
+      <tr  tyle="text-align: center;" class="button">
+          <td colspan="2"><input type="submit"  value="Update cart" formmethod="post" formaction=""></td>
+          <td colspan="2"><button formaction="../admin_area/index.php"><a href="../admin_area/index.php" style="text-decoration:none;color: black;">Continue Shopping</a></button></td>
+          <td colspan="2"><button><a href="checkout.php" style="text-decoration:none; color: black;">Checkout</a></button></td>
+          <td></td>
+     </tr> 
+  
+
+</table>
+     
+	  <div id="ord">
+        <h3><i>Լրացնել Համապատասխան Տվյալները</i></h3>
+		<hr>
+		 
+        <label for="name">Անուն։</label><br>
+        <input type="text"  name="fn" ><br>
+		<label for="last_name">Ազգանուն։</label><br>
+        <input type="text"  name="ln" ><br>
+		<label for="password">Email Հասցեն։</label><br>
+        <input type="email"  name="em" ><br>
+		<input type="submit"  name="sub" value="Հաստատել Պատվերը">
+	   </div>
+	   
+</form>
+ 
+
+        <div id="footer">
+                <img src="../site/images/logos.jpg" width="285" width="115">
+          </div>
+     
+    </body>
+</html>
+
+      
+

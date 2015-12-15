@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {  
+  background-image: url("../img/newadb.jpg");   
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main_wrapper{
+  width: 1000px;
+  height: auto;
+  margin: auto;
+ }
+
+#header{
+  width: 1000px;
+  height: 120px;
+  margin: auto;
+ background-image: url("../img/admin.gif");
+ border-bottom: 5px groove orange;
+}
+#left{
+  width: 795px;
+  
+  height: 1200px;
+  margin: auto;
+  background-image: url("../img/adminl.jpg");
+  background-size: cover;
+  float: left;
+}
+
+#right{
+  width: 200px;
+  height: 1200px;  
+  margin: auto;
+  background-image: url("../img/adminl.jpg");
+  background-size: cover;
+  float: right;
+  border-left: 5px groove orange;
+}
+#right a {
+  text-decoration: none;
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 10px 10px;
+  margin: 6px;
+}
+#right a:hover {
+ color: orange;
+ font-size: 18px;
+}
+
+#registration-form {
+  font-family:'Open Sans Condensed', sans-serif;
+	width: 770px;
+  min-width:250px;
+	margin: auto;
+	position: relative;
+}
+
+#registration-form .fieldset {
+	background-color:#D2E9FF;
+
+	border-radius: 3px;
+  
+}
+
+ #registration-form legend {
+	text-align: center;
+	background: #364351;
+	width: 100%;
+	padding: 10px 0;
+	border-radius: 3px 3px 0 0;
+	color: white;
+font-size:1.5em;
+}
+
+.fieldset form{
+  border:1px solid #2f2f2f;
+  margin:0 auto;
+  display:block;
+  width:100%;
+  padding:10px 5px;
+  box-sizing:border-box;
+  border-radius:0 0 3px 3px;
+}
+.placeholder #registration-form label {
+	display: none;
+}
+ .no-placeholder #registration-form label{
+margin-left:5px;
+  position:relative;
+  display:block;
+  color:grey;
+  text-shadow:0 1px white;
+  font-weight:bold;
+}
+/* all */
+::-webkit-input-placeholder { text-shadow:1px 1px 1px white; font-weight:bold; }
+::-moz-placeholder { text-shadow:0 1px 1px white; font-weight:bold; } /* firefox 19+ */
+:-ms-input-placeholder { text-shadow:0 1px 1px white; font-weight:bold; } /* ie */
+#registration-form input[type=text] {
+	padding: 10px 15px;
+	border-radius: 1px;
+  margin:5px auto;
+  background-color:#f7f7f7;
+	border: 1px solid silver;
+
+	-webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px 5px rgba(0,0,0,0.2), 0 1px rgba(255,255,255,.8);
+	width: 100%;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  -webkit-transition:background-color .5s ease;
+-moz-transition:background-color .5s ease;
+-o-transition:background-color .5s ease;
+-ms-transition:background-color .5s ease;
+transition:background-color .5s ease;
+}
+
+
+ #registration-form input[type=file],#registration-form input[type=password],#registration-form select {
+	padding: 15px 20px;
+	border-radius: 1px;
+  margin:5px auto;
+  background-color:#f7f7f7;
+	border: 1px solid silver;
+
+	-webkit-box-shadow: inset 0 1px 5px rgba(0,0,0,0.2);
+	box-shadow: inset 0 1px 5px rgba(0,0,0,0.2), 0 1px rgba(255,255,255,.8);
+	width: 100%;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  -webkit-transition:background-color .5s ease;
+-moz-transition:background-color .5s ease;
+-o-transition:background-color .5s ease;
+-ms-transition:background-color .5s ease;
+transition:background-color .5s ease;
+}
+
+.no-placeholder #registration-form input[type=text] {
+	padding: 10px 20px;
+}
+.placeholder #registration-form input[type=password] {
+	padding: 10px 20px;
+}
+.no-placeholder #registration-form select {
+	padding: 10px 20px;
+}
+
+
+
+#registration-form input[type=text]:active, .placeholder #registration-form input[type=text]:focus {
+	outline: none;
+	border-color: silver;
+  background-color:white;
+}
+
+#registration-form input[type=password]:active, .placeholder #registration-form input[type=password]:focus {
+	outline: none;
+	border-color: silver;
+  background-color:white;
+}
+
+#registration-form input[type=submit] {
+  font-family:'Open Sans Condensed', sans-serif;
+  text-transform:uppercase;
+  outline:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 40%;
+	background-color: #0099CC;
+	padding: 10px;
+	color: white;
+	border: 1px solid #000514;
+	border-radius: 3px;
+	font-size: 1em;
+	font-weight: bold;
+        margin-left: 30%;        
+	margin-top: 3px;
+	cursor: pointer;
+  position:relative;
+  top:0;
+}
+
+#registration-form input[type=submit]:hover {
+	background-color: #CC7A00;
+}
+
+#registration-form input[type=submit]:active {
+background:#5C8CA7;
+}
+#registration-form select{
+	width:100%;
+	padding:5px;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+
+   
+* {font-family: Helvetica Neue, Arial, sans-serif; }
+
+div.body { background-image: linear-gradient(#002952 25%, #0066CC);}
+
+h1, table { text-align: center;}
+
+h1 { text-align: center; color: #ffffff; }
+#firstrow {color: #ffffff; }
+
+table {border-collapse: collapse;  width: 98%; margin: 0 auto 2rem;}
+
+th, td { padding: 1.5rem; font-size: 1.3rem; }
+
+tr {background: hsl(50, 50%, 80%); }
+
+tr, td { transition: .4s ease-in; } 
+
+tr:first-child {background: hsla(12, 100%, 40%, 0.5); }
+
+tr:nth-child(even) { background: hsla(50, 50%, 80%, 0.5); }
+
+td:empty {background: hsla(50, 25%, 60%, 0.5); }
+
+tr:hover:not(#firstrow), tr:hover td:empty {background: #CCA300; pointer-events: visible;}
+tr:hover:not(#firstrow) { transform: scale(1.2); font-weight: 300; box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
