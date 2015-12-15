@@ -22,7 +22,7 @@ if($num ==2) {
 
    $code = generate_string($str,$count); 
 
- //this is a comment 
+ //this is a comment - new comment 
 
 }
 
