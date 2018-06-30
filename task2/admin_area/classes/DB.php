@@ -10,7 +10,7 @@ class DB
     public function __construct()
     {
              
-       $this->dbh = new PDO("mysql:host=localhost;dbname=task", "root", "arsenaram081212");
+       $this->dbh = new PDO("mysql:host=localhost;dbname=task", "root", "password");
     }
  
  
